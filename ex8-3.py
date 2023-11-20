@@ -22,5 +22,9 @@ def nine(n):
 
 from turtle import *
 seven(7)
-#nine(9)
+right(50)
+penup()
+goto(0,-200)
+pendown()
+nine(9)
 done()
