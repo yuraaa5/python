@@ -11,7 +11,7 @@ first_term = 0
 second_term = 0
 # 結果
 result = 0
-
+# どの演算キーが押されたかを保存しておく
 operation = 0
 
 def do_plus():
@@ -25,6 +25,7 @@ def do_plus():
     operation = 1
 
 def do_minus():
+    "- キーが押されたときの計算動作、第一項の設定と入力中の数字のクリア"
     global current_number
     global first_term
     global operation
@@ -34,6 +35,7 @@ def do_minus():
     operation = 2
 
 def do_times():
+    "× キーが押されたときの計算動作、第一項の設定と入力中の数字のクリア"
     global current_number
     global first_term
     global operation
@@ -43,6 +45,7 @@ def do_times():
     operation = 3
 
 def do_divided():
+    "÷ キーが押されたときの計算動作、第一項の設定と入力中の数字のクリア"
     global current_number
     global first_term
     global operation
@@ -52,7 +55,7 @@ def do_divided():
     operation = 4
 
 def do_eq():
-    "= キーが押された時の計算動作、第二項の設定、加算の実施、入力中の数字のクリア"
+    "= キーが押された時の計算動作、第二項の設定、四則演算の実施、入力中の数字のクリア"
     global second_term
     global result
     global current_number
