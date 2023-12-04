@@ -118,6 +118,7 @@ bp.grid(row=2,column=3)
 
 # 数値を表示するウィジェット
 e = tk.Entry(f)
+e.configure(font=('Helvetica', 14))
 e.grid(row=0,column=0,columnspan=4)
 clear()
 
