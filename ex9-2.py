@@ -62,69 +62,43 @@ f.grid()
 #ウィジェットの作成
 
 b1 = tk.Button(f,text='1', command=lambda:key(1))
-b1.configure(width=2)
-b1.configure(bg = '#ffffff')
-b1.configure(font=('Helvetica', 14))
+b1.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 b2 = tk.Button(f,text='2', command=lambda:key(2))
-b2.configure(width=2)
-b2.configure(bg = '#ffffff')
-b2.configure(font=('Helvetica', 14))
+b2.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 b3 = tk.Button(f,text='3', command=lambda:key(3))
-b3.configure(width=2)
-b3.configure(bg = '#ffffff')
-b3.configure(font=('Helvetica', 14))
+b3.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 b4 = tk.Button(f,text='4', command=lambda:key(4))
-b4.configure(width=2)
-b4.configure(bg = '#ffffff')
-b4.configure(font=('Helvetica', 14))
+b4.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 b5 = tk.Button(f,text='5', command=lambda:key(5))
-b5.configure(width=2)
-b5.configure(bg = '#ffffff')
-b5.configure(font=('Helvetica', 14))
+b5.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 b6 = tk.Button(f,text='6', command=lambda:key(6))
-b6.configure(width=2)
-b6.configure(bg = '#ffffff')
-b6.configure(font=('Helvetica', 14))
+b6.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 b7 = tk.Button(f,text='7', command=lambda:key(7))
-b7.configure(width=2)
-b7.configure(bg = '#ffffff')
-b7.configure(font=('Helvetica', 14))
+b7.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 b8 = tk.Button(f,text='8', command=lambda:key(8))
-b8.configure(width=2)
-b8.configure(bg = '#ffffff')
-b8.configure(font=('Helvetica', 14))
+b8.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 b9 = tk.Button(f,text='9', command=lambda:key(9))
-b9.configure(width=2)
-b9.configure(bg = '#ffffff')
-b9.configure(font=('Helvetica', 14))
+b9.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 b0 = tk.Button(f,text='0', command=lambda:key(0))
-b0.configure(width=2)
-b0.configure(bg = '#ffffff')
-b0.configure(font=('Helvetica', 14))
+b0.configure(width=2,bg = '#ffffff',font=('Helvetica', 14))
 
 bc = tk.Button(f,text='C', command=clear)
-bc.configure(width=2)
-bc.configure(bg = '#ff0000')
-bc.configure(font=('Helvetica', 14))
+bc.configure(width=2,bg = '#ff0000',font=('Helvetica', 14))
 
 bp = tk.Button(f,text='+', command=plus)
-bp.configure(width=2)
-bp.configure(bg = '#00ff00')
-bp.configure(font=('Helvetica', 14))
+bp.configure(width=2,bg = '#00ff00',font=('Helvetica', 14))
 
 be = tk.Button(f,text='=', command=eq)
-be.configure(width=2)
-be.configure(bg = '#00ff00')
-be.configure(font=('Helvetica', 14))
+be.configure(width=2,bg = '#00ff00',font=('Helvetica', 14))
 
 #Grid 型ジオメトリマネージャによるウィジェットの割付
 
