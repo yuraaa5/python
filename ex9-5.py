@@ -82,6 +82,35 @@ def do_me():
     current_number = current_number / 100
     result = current_number
 
+def do_h():
+    global current_number
+    global result
+
+    current_number = current_number / 3600
+    result = current_number
+
+def do_mi():
+    global current_number
+    global result
+
+    current_number = current_number / 60
+    result = current_number
+
+def do_gal():
+    global current_number
+    global result
+
+    current_number = current_number * 3.785
+    result = current_number
+
+def do_lb():
+    global current_number
+    global result
+
+    current_number = current_number * 453.6
+    result = current_number
+    
+
 def do_eq():
     "= キーが押された時の計算動作、第二項の設定、四則演算の実施、入力中の数字のクリア"
     global second_term
@@ -146,6 +175,22 @@ def feat():
 
 def me():
     do_me()
+    show_number(result)
+
+def h():
+    do_h()
+    show_number(result)
+
+def mi():
+    do_mi()
+    show_number(result)
+
+def gal():
+    do_gal()
+    show_number(result)
+
+def lb():
+    do_lb()
     show_number(result)
 
 def show_number(num):
@@ -221,6 +266,18 @@ bfeat.configure(width=2,bg = '#00ff00',font=('Helvetica', 14))
 bme = tk.Button(f,text='m', command=me)
 bme.configure(width=2,bg = '#00ff00',font=('Helvetica', 14))
 
+bh = tk.Button(f,text='h', command=h)
+bh.configure(width=2,bg = '#00ff00',font=('Helvetica', 15))
+
+bmi = tk.Button(f,text='min', command=mi)
+bmi.configure(width=2,bg = '#00ff00',font=('Helvetica', 15))
+
+bgal = tk.Button(f,text='gal', command=gal)
+bgal.configure(width=2,bg = '#00ff00',font=('Helvetica', 15))
+
+blb = tk.Button(f,text='lb', command=lb)
+blb.configure(width=2,bg = '#00ff00',font=('Helvetica', 15))
+
 #Grid 型ジオメトリマネージャによるウィジェットの割付
 
 b1.grid(row=3,column=0)
@@ -243,11 +300,15 @@ btemp.grid(row=2,column=4)
 bin.grid(row=3,column=4)
 bfeat.grid(row=4,column=4)
 bme.grid(row=1,column=4)
+bh.grid(row=1,column=5)
+bmi.grid(row=2,column=5)
+bgal.grid(row=3,column=5)
+blb.grid(row=4,column=5)
 
 # 数値を表示するウィジェット
 e = tk.Entry(f)
-e.configure(font=('Helvetica', 14))
-e.grid(row=0,column=0,columnspan=4)
+e.configure(font=('Helvetica', 20))
+e.grid(row=0,column=0,columnspan=6)
 clear()
 
 # ここから GUI がスタート
